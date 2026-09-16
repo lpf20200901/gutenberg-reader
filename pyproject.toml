@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gutenberg-reader"
+version = "0.1.0"
+description = "Build clean, offline reading pages from Project Gutenberg plain-text books, with real handling of the inconsistent layouts in Chinese transcriptions."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["gutenberg", "ebook", "reader", "chinese", "traditional-chinese", "epub"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Markup :: HTML",
+]
+dependencies = []
+
+# The test suite uses only the standard library, so there is nothing to install
+# in order to run it:  python run_tests.py
+# (or: python -m unittest discover -s tests -v, with src/ on PYTHONPATH)
+
+[project.scripts]
+gutenberg-reader = "gutenberg_reader.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,27 @@
+# byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# test / tooling
+.pytest_cache/
+.coverage
+htmlcov/
+
+# generated output — never commit book texts or built pages
+books/
+out/
+*.epub
+*.mobi
+*.azw3
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

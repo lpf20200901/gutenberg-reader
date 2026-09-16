@@ -1,0 +1,19 @@
+# Normalise line endings: LF in the repository and in the working tree.
+# Without this, a Windows checkout rewrites every file to CRLF and any diff
+# between platforms shows the whole file as changed.
+* text=auto eol=lf
+
+# Windows-only helper scripts keep CRLF so cmd.exe is happy.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets must never be line-ending converted.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.epub binary
+*.mobi binary
+*.azw3 binary
