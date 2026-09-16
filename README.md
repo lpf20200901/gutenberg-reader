@@ -10,6 +10,13 @@ gutenberg-reader get 51828 -o books/聊斋志异 --simplify
 `reader.html` 是**单文件、零外部依赖**——正文全部内嵌，没有 CSS 文件、没有脚本文件、没有网络请求。
 双击就能看，也能塞进任何侧边栏或 iframe。
 
+## 文档
+
+| 文档 | 内容 |
+| --- | --- |
+| [静默失败：四个不报错的 bug](docs/silent-failures.md) | **建议先读这个**。为什么这四类 bug 全都不会报错，以及怎么防 |
+| [中文排版差异实录](docs/layout-zoo.md) | 九本书的完整实测数据：7 种标题格式、3 种分段约定、繁简缺口清单 |
+
 ---
 
 ## 为什么值得写
@@ -91,7 +98,8 @@ AssertionError: '钟' not found in 'x锺y'
 - `藉`（53 处）——在简体里本来就是合法字（慰藉 / 狼藉），只有「藉口 → 借口」该转，依赖上下文
 - `祗`（7 处）——与 `祇`/`只` 混用的细微变体，频率可忽略
 
-细节记录在 [`docs/layout-zoo.md`](docs/layout-zoo.md)。
+细节记录在 [`docs/layout-zoo.md`](docs/layout-zoo.md)，
+排查过程与防护方法在 [`docs/silent-failures.md`](docs/silent-failures.md)。
 
 ---
 
