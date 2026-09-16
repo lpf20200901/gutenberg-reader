@@ -10,6 +10,10 @@ gutenberg-reader get 51828 -o books/聊斋志异 --simplify
 `reader.html` 是**单文件、零外部依赖**——正文全部内嵌，没有 CSS 文件、没有脚本文件、没有网络请求。
 双击就能看，也能塞进任何侧边栏或 iframe。
 
+![生成的阅读页](docs/screenshot.png)
+
+*今古奇观（80 卷 / 92 万字）的生成结果。配色由 `--theme dsh` 自动读取宿主程序当前皮肤得到。*
+
 ## 文档
 
 | 文档 | 内容 |
