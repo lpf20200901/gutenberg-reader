@@ -20,6 +20,7 @@ gutenberg-reader get 51828 -o books/聊斋志异 --simplify
 | --- | --- |
 | [静默失败：四个不报错的 bug](docs/silent-failures.md) | **建议先读这个**。为什么这四类 bug 全都不会报错，以及怎么防 |
 | [中文排版差异实录](docs/layout-zoo.md) | 九本书的完整实测数据：7 种标题格式、3 种分段约定、繁简缺口清单 |
+| [双远端发布指南](docs/dual-remote-setup.md) | GitHub 主 / Gitee 从的配置方式、邮箱归属、三个平台差异 |
 
 ---
 
